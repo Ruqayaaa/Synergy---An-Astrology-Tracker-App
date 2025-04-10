@@ -14,6 +14,15 @@ struct ContentView: View {
             Text(spaceDataMessage)  
                 .font(.headline)
                 .padding()
+
+            //calling horescope page to be displayed 
+            NavigationLink(destination: HoroscopeView(userStarSign: "Dr. When is ur birthday?")) {
+                    Text("View Horoscope")
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
     }
 }
 
